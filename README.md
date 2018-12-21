@@ -1,7 +1,7 @@
 SublimeLinter-contrib-SpellCheckLinter
 ======================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-SpellCheckLinter.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-SpellCheckLinter)
+[![Build Status](https://travis-ci.org/hsghori/SublimeLinter-contrib-SpellCheckLinter.svg?branch=master)](https://travis-ci.org/hsghori/SublimeLinter-contrib-SpellCheckLinter)
 
 This linter plugin for [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter) provides an interface to [cspell](https://www.npmjs.com/package/cspell). It will be used with files that have the any source code syntax.
 
