@@ -2,7 +2,7 @@ from SublimeLinter.lint import Linter
 import re
 
 
-class SpellCheckLinter(Linter):
+class CSpell(Linter):
     cmd = 'cspell ${file}'
     defaults = {'selector': 'source'}
     regex = re.compile(

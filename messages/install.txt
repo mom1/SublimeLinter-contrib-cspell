@@ -1,4 +1,4 @@
-SublimeLinter-contrib-SpellCheckLinter
+SublimeLinter-contrib-cspell
 -------------------------------
 This linter plugin for SublimeLinter provides an interface to cspell.
 
