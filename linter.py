@@ -1,10 +1,10 @@
-from SublimeLinter.lint import Linter  # or NodeLinter, PythonLinter, ComposerLinter, RubyLinter
+from SublimeLinter.lint import Linter
+import re
 
 
-class __class__(Linter):
-    cmd = '__cmd__'
-    regex = r''
-    multiline = False
-    defaults = {
-        'selector': 'source.python'
-    }
+class SpellCheckLinter(Linter):
+    cmd = 'cspell ${file}'
+    defaults = {'selector': 'source'}
+    regex = re.compile(
+        r'^(?P<filename>[^:]*):(?P<line>\d+):(?P<col>\d+) - (?P<message>.*)$'
+    )
