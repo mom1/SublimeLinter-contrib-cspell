@@ -3,4 +3,4 @@ SublimeLinter-contrib-cspell
 This linter plugin for SublimeLinter provides an interface to cspell.
 
 For more information, please see:
-https://github.com/hsghori/SublimeLinter-contrib-SpellCheckLinter
+https://github.com/hsghori/SublimeLinter-contrib-cspell

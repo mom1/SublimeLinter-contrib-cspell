@@ -1,10 +1,9 @@
-from SublimeLinter.lint import Linter
-import re
+from SublimeLinter.lint import Linter, STREAM_STDOUT
 
 
 class CSpell(Linter):
-    cmd = 'cspell ${file}'
+    cmd = 'cspell ${file_on_disk}'
     defaults = {'selector': 'source'}
-    regex = re.compile(
-        r'^(?P<filename>[^:]*):(?P<line>\d+):(?P<col>\d+) - (?P<message>.*)$'
-    )
+    regex = r'^(?P<filename>[^:]*):(?P<line>\d+):(?P<col>\d+) - (?P<message>.*)$'
+    tempfile_suffix = '-'
+    error_stream = STREAM_STDOUT
